@@ -22,14 +22,8 @@ nav {
     background-color: yellow;
 }
 
-#transition {
-    background-image: url("../img/transition.png");
-    width: 100%;
-    height: 60px;
-}
-
 footer {
-    background-color: #222;
+    background-color: red;
     width: 100%;
     height: 250px;
 }
@@ -47,53 +41,59 @@ Main Site
 }
 
 #top_image:hover {
-    width: 77%;
+    transform: scale(1.01);
 }
 
 #grid_wrapper {
     display: grid;
     background-color: #222;
     width: 75%;
-    height: 100vh;
-    min-height: 500px;
+    height: 200vh;
     margin: 10px auto 10px auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr; 
     grid-template-areas: 
-    "s1 s2"
-    "s1 s2"
-    "s3 s4"
-    "s5 s4"
-    "s5 s4"
+    "sa ss"
+    "sa ss"
+    "so su"
+    "sw su"
+    "sw su"
+    "sg sg"
     ;
 }
 
-#section_home_1 {
-    grid-area: s1;
+#section_shop {
+    grid-area: ss;
     margin: 10px;
     background-color: red;
 }
 
-#section_home_2 {
-    grid-area: s2;
+#section_obs {
+    grid-area: so;
     margin: 10px;
     background-color: red;
 }
 
-#section_home_3 {
-    grid-area: s3;
+#section_about {
+    grid-area: sa;
     margin: 10px;
     background-color: red;
 }
 
-#section_home_4 {
-    grid-area: s4;
+#section_updates {
+    grid-area: su;
     margin: 10px;
     background-color: red;
 }
 
-#section_home_5 {
-    grid-area: s5;
+#section_work {
+    grid-area: sw;
+    margin: 10px;
+    background-color: red;
+}
+
+#section_gallery {
+    grid-area: sg;
     margin: 10px;
     background-color: red;
 }
