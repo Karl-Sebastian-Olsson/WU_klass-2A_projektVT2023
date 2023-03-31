@@ -13,10 +13,22 @@ header {
     background-color: #010101;
     position: fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
 }
 
 nav li {
+    float: left;
     list-style: none;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    border: solid  2px white;
 }
 
 nav li a {
