@@ -10,16 +10,39 @@
 <body>
 
     <header>
-        <img src="img/logo.png" alt="Orbit logo" id="logo">
+        <picture>
+            <source media="(max-width: 450px)" srcset="img/logo2.png"> 
+            <img src="img/logo.png" alt="Orbit logo" id="logo">
+        </picture>
         <nav>
-            <ul>
+            <ul id="nav_links">
                 <li><a href="#">: Join us!</a></li>
                 <li><a href="#">: Gallery</a></li>
                 <li><a href="#">: About us</a></li>
                 <li><a href="#">: Contact</a></li>
             </ul>
         </nav>
+        <div id="burger" onclick="openNav()">
+            <div id="burger_part_1"></div>        
+            <div id="burger_part_2"></div>        
+            <div id="burger_part_3"></div>        
+        </div>
     </header>
+
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <a href="#">: Join us!</a>
+        <a href="#">: Gallery</a>
+        <a href="#">: About us</a>
+        <a href="#">: Contact</a>
+    </div>
+
+    <div id="grid_wrapper_index">
+        <section class="section_index" id="section_index_1"></section>
+        <section class="section_index" id="section_index_2"></section>
+        <section class="section_index" id="section_index_3"></section>
+        <section class="section_index" id="section_index_4"></section>
+    </div>
     
     <script src="js/app.js"></script>
 
