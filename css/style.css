@@ -391,7 +391,9 @@ Gallery page
 About page
 */
 
-.grid_wrapper_about {
+
+
+/* .grid_wrapper_about {
     background-color: #010101;
     width: 85%;
     height: 200vh;
@@ -442,7 +444,7 @@ About page
 
 #article_about3 img {
     height: 100%;
-}
+} */
 
 @media screen and (min-width: 450px) and (max-width: 920px) {
     .column {
@@ -655,4 +657,8 @@ About page
         flex: 25%;
         max-width: 25%;
     }
+
+    /*
+    About page
+    */
 }
