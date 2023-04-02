@@ -185,6 +185,9 @@ main page
 
 #section_index_2 {
     grid-area: s2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #section_index_2 p {
@@ -199,6 +202,24 @@ main page
 
 #section_index_3 {
     grid-area: s3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section_index_3 textarea {
+    width: 100%;
+    height: 150px;
+    margin: 20px 0;
+    color: #010101;
+}
+
+#section_index_3 button {
+    width: 50%;
+    height: 50px;
+    background-color: #ff004e;
+    align-self: center;
+    border: solid #f1f1f1 3px;
 }
 
 #section_index_4 {
