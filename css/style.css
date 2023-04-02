@@ -100,7 +100,76 @@ header {
 footer {
     background-color: #010101;
     width: 100%;
-    height: 250px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#footer_links a {
+    padding: 10px;
+    margin: 10px 20px;
+    border: #f1f1f1 3px solid;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: .75rem;
+    color: #33333366;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#footer_socials a {
+    margin: 10px 20px;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-facebook {
+    background-color: #003884;
+}
+
+.fa-twitter {
+    background-color: #008ac5;
+}
+
+.fa-youtube {
+    background-color: #ff004e;
+}
+
+.fa-instagram {
+    background-color: #600088;
+}
+
+.fa-pinterest {
+    background-color: #ff004e;
+}
+
+.fa-reddit {
+    background-color: #ff004e;
 }
 
 /*
@@ -225,6 +294,7 @@ main page
 
 #section_index_4 {
     grid-area: s4;
+    background-color: #010101;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,5 +367,11 @@ main page
         "s4 s4"
         "s4 s4"
         ;
+    }
+
+
+
+    #gallery_index_container {
+        display: none;
     }
 }
