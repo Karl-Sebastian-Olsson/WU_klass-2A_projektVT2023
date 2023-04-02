@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff004e"/>
     <title>Orbit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <picture>
-            <source media="(max-width: 450px)" srcset="img/logo2.png"> 
-            <img src="img/logo.png" alt="Orbit logo" id="logo">
-        </picture>
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 450px)" srcset="img/logo2.png"> 
+                <img src="img/logo.png" alt="Orbit logo" href="index.html" id="logo">
+            </picture>
+        </a>
         <nav>
             <ul id="nav_links">
-                <li><a href="#">: Join us!</a></li>
-                <li><a href="#">: Gallery</a></li>
-                <li><a href="#">: About us</a></li>
+                <li><a href="Join.html">: Join us!</a></li>
+                <li><a href="gallery.html">: Gallery</a></li>
+                <li><a href="about.html">: About us</a></li>
                 <li><a href="#">: Contact</a></li>
             </ul>
         </nav>
@@ -27,7 +30,15 @@
             <div id="burger_part_2"></div>        
             <div id="burger_part_3"></div>        
         </div>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="Join.html">: Join us!</a>
+            <a href="gallery.html">: Gallery</a>
+            <a href="about.html">: About us</a>
+            <a href="#">: Contact</a>
+        </div>
     </header>
+
     <div id="top_image_container">
         <section id="top_banner">
             <h2>Welcome to Orbit, spacewalker!</h2>
@@ -35,46 +46,47 @@
         </section>
         <img src="img/top_image.jpg" alt="Spaceship" id="top_image">
     </div>
-    
-    <div id="sidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-        <a href="#">: Join us!</a>
-        <a href="#">: Gallery</a>
-        <a href="#">: About us</a>
-        <a href="#">: Contact</a>
-    </div>
 
     <div id="grid_wrapper_index">
         <article class="section_index" id="section_index_1">
             <img src="img/join_banner.jpg" alt="Join banner">
             <h2>Adventure!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi?</p>
-            <a href="#"><button href="#">Depart</button></a>
+            <a href="Join.html"><button>Depart</button></a>
         </article>
 
         <article class="section_index" id="section_index_2">
             <h2>Who are we?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque ad reiciendis soluta sit, sint similique, dolore minima quo, tempore suscipit ducimus. Vel, itaque dolorem?</p>
-            <a href="#">Read more...</a>
-            <img src="img/logo.png" alt="Orbit logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque ad reiciendis soluta sit, sint similique, dolore minima quo, tempore suscipit ducimus. </p>
+            <a href="about.html">Read more...</a>
+            <img src="img/who_banner.jpg" alt="Orbit logo">
         </article>
 
         <article class="section_index" id="section_index_3">
             <h2>Questions?</h2>
             <p>Lorem ipsum dolor sit amet.</p>
             <textarea></textarea>
-            <button>Send</button>
+            <a href="#"><button>Send</button></a>
         </article>
 
         <article class="section_index" id="section_index_4">
-            <h2></h2>
+            <picture>
+                <source media="(max-width: 920px)" srcset="img/logo2.png"> 
+                <img src="img/logo.png" alt="Orbit logo" id="logo">
+            </picture>
         </article>
     </div>
 
-    gallery / on mobile scroll image thingy you know what I mean slide show shit
+    <article id="gallery_index_container">
+        <div>
+            <h2>Gallery</h2>
+            <a href="gallery.html"><p>View the gallery...</p></a>
+        </div>
+        <img src="img/gallery_index.jpg" alt="Gallery">
+    </article>
 
     <footer>
-
+        vi behöver copyright o shit här nere samt socials för att se legit ut
     </footer>
     
     <script src="js/app.js"></script>

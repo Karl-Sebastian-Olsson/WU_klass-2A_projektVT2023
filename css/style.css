@@ -151,13 +151,14 @@ main page
     "s4 s4"
     ;
     min-height: 200vh;
-    width: 75%;
+    width: 85%;
     border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .section_index {
     background-color: #111;
-    margin: 10px;
     text-align: center;
     padding: 20px;
 }
@@ -224,11 +225,43 @@ main page
 
 #section_index_4 {
     grid-area: s4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (min-width: 450px) {
-
+#section_index_4 img {
+    height: auto;
+    margin: auto;
+    width: 100%;
 }
+
+#gallery_index_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+#gallery_index_container div {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 10%;
+    background-color: #01010166;
+}
+
+#gallery_index_container img {
+    width: 100%;
+    height: auto;
+}
+
+/*@media screen and (min-width: 450px) and (max-width: 920px) {
+}*/
 
 @media screen and (min-width: 920px) {
     #burger {
@@ -250,5 +283,19 @@ main page
     #nav_links a {
     color: #ff004e;
     text-decoration: none;
+    }
+
+    /*
+    Main page
+    */
+
+    #grid_wrapper_index {
+        min-width: 900px;
+        grid-template-areas: 
+        "s1 s2"
+        "s1 s3"
+        "s4 s4"
+        "s4 s4"
+        ;
     }
 }
