@@ -91,7 +91,7 @@ header {
     scale: 1.1;
 }
 
-.sidenav .closebtn {
+.sidenav #closebtn {
     position: absolute;
     top: 15px;
     font-weight: bolder;
@@ -330,6 +330,10 @@ main page
     height: auto;
 }
 
+#hover_gallery_index_container {
+    display: none;
+}
+
 /*@media screen and (min-width: 450px) and (max-width: 920px) {
 }*/
 
@@ -471,5 +475,49 @@ main page
 
     #gallery_index_container {
         display: none;
+    }
+
+    #hover_gallery_index_container {
+        margin: 100px auto;
+        display: grid;
+        width: 100%;
+        height: fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hover_container {
+        position: relative;
+    }
+
+    .hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #010101;
+        opacity: 0;
+    }
+
+    .hover h2 {
+        font-size: 2rem;
+    }
+
+    .hover:hover {
+        opacity: .5;
+        transition: .5s ease;
+        cursor: pointer;
     }
 }
