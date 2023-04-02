@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
+    color: #f1f1f1;
 }
 
 body {
@@ -19,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 #logo {
@@ -86,7 +88,6 @@ header {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
     scale: 1.1;
 }
 
@@ -96,12 +97,39 @@ header {
     font-weight: bolder;
 }
 
+footer {
+    background-color: #010101;
+    width: 100%;
+    height: 250px;
+}
+
 /*
 main page 
 */
 
-#top_image_overflow {
+#top_image_container {
     overflow: hidden;
+}
+
+#top_banner {
+    min-width: 200px;
+    max-width: 450px;
+    height: fit-content;
+    background-color: #111;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#top_banner h2 {
+    font-size: 1.5rem;
+    margin: 20px 30px 0 30px;
+}
+
+#top_banner p {
+    margin: 20px 50px;
 }
 
 #top_image {
@@ -111,7 +139,7 @@ main page
 }
 
 #grid_wrapper_index {
-    background-color: #010166;
+    background-color: #010101;
     margin: 50px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -122,21 +150,51 @@ main page
     "s3 s3"
     "s4 s4"
     ;
-    height: 150vh;
+    min-height: 200vh;
     width: 75%;
-    gap: 10px;
+    border-radius: 10px;
 }
 
 .section_index {
-    background-color: #660101;
+    background-color: #111;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
 }
 
 #section_index_1 {
     grid-area: s1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section_index_1 img {
+    width: calc(100% + 40px);
+    height: auto;
+    margin: -20px;
+}
+
+#section_index_1 button {
+    width: 50%;
+    height: 50px;
+    background-color: #ff004e;
+    align-self: center;
+    border: solid #f1f1f1 3px;
 }
 
 #section_index_2 {
     grid-area: s2;
+}
+
+#section_index_2 p {
+    margin: 20px 0;
+}
+
+#section_index_2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 #section_index_3 {
@@ -145,6 +203,10 @@ main page
 
 #section_index_4 {
     grid-area: s4;
+}
+
+@media screen and (min-width: 450px) {
+
 }
 
 @media screen and (min-width: 920px) {
