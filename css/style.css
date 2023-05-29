@@ -239,6 +239,10 @@ main page
     justify-content: space-between;
 }
 
+#section_index_1 #full_screen {
+    display: none;
+}
+
 #section_index_1 img {
     width: calc(100% + 40px);
     height: auto;
@@ -503,6 +507,10 @@ About page
 
     #gallery_index_container {
         display: none;
+    }
+
+    #section_index_1 #full_screen {
+        display: block;
     }
 
     #hover_gallery_index_container {
