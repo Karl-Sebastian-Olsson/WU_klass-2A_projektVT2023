@@ -23,7 +23,7 @@ header {
     z-index: 1;
 }
 
-#logo {
+.logo {
     height: 60px;
     width: auto;
     margin-left: 10px;
@@ -131,7 +131,7 @@ footer img {
 
 footer p {
     font-size: .75rem;
-    color: #33333366;
+    color: #333333;
     text-align: center;
     margin: 10px 0;
 }
@@ -249,11 +249,13 @@ main page
     margin: -20px;
 }
 
-#section_index_1 button {
+#grid_wrapper_index .button {
     width: 50%;
     height: 50px;
     background-color: #ff004e;
     align-self: center;
+    align-content: center;
+    display: grid;
     border: solid #f1f1f1 3px;
 }
 
@@ -286,14 +288,6 @@ main page
     height: 150px;
     margin: 20px 0;
     color: #010101;
-}
-
-#section_index_3 button {
-    width: 50%;
-    height: 50px;
-    background-color: #ff004e;
-    align-self: center;
-    border: solid #f1f1f1 3px;
 }
 
 #section_index_4 {
