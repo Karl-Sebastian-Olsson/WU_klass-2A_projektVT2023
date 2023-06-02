@@ -497,6 +497,10 @@ About page
     margin: 10px 0;
 }
 
+#join_info .widescreen {
+    display: none;
+}
+
 #join_info canvas {
     background-color: yellow;
     width: 100px;
@@ -724,5 +728,9 @@ About page
 
     #join_info h2 {
         font-size: 3rem;
+    }
+
+    #join_info .widescreen {
+        display: block;
     }
 }
