@@ -458,6 +458,86 @@ About page
     height: 100%;
 }
 
+/* Join us Page */
+
+#join_info {
+    background-color: #010101;
+    width: 85%;
+    margin: 80px auto 50px;
+    padding: 20px;
+    gap: 0 0 20px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px minmax(200px, auto) 100px;
+    grid-template-areas: 
+    "h2"
+    "a1"
+    "im"
+    ;
+}
+
+#join_info img {
+    grid-area: im;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+#join_info h2 {
+    grid-area: h2;
+}
+
+#join_info section {
+    grid-area: a1;
+}
+
+#join_info section p {
+    margin: 10px 0;
+}
+
+#join_info canvas {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+#join_form_wrapper {
+    background-color: #010101;
+    margin: 50px auto;
+    width: 85%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#join_form_wrapper > * {
+    background-color: #111;
+    flex: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+#join_form_wrapper p {
+    margin: 20px 0 0;
+}
+
+#join_form_wrapper img {
+    width: 100%;
+}
+
+#join_form_wrapper textarea {
+    width: 100%;
+    height: 25px;
+    color: #010101;
+}
+
+#about_yourself {
+    min-height: 200px;
+}
+
 @media screen and (min-width: 450px) and (max-width: 920px) {
     .column {
         flex: 50%;
@@ -579,43 +659,70 @@ About page
     }
 
     /*
-About page
-*/
+    About page
+    */
+    .grid_wrapper_about {
+        grid-template-areas: 
+        "i1 a1 a1"
+        "a2 a2 i2"
+        "a3 a3 a3"
+        ;
+    }
+    
+    .image_about {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    #image_about1 {
+        display: block;
+        grid-area: i1;
+    }
+    
+    #image_about2 {
+        display: block;
+        grid-area: i2;
+    }
+    
+    .article_about img {
+        display: none;
+    }
+    
+    #article_about3 img {
+        display: block;
+    }
+    
+    .article_about .widescreen {
+        display: block;
+    }
+    
+    /* 
+    Join us page
+    */
 
-.grid_wrapper_about {
-    grid-template-areas: 
-    "i1 a1 a1"
-    "a2 a2 i2"
-    "a3 a3 a3"
-    ;
-}
+    #join_info {
+        height: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "h2 h2 im"
+        "a1 a1 im"
+        "si si im"
+        ;
+    } 
+    
+    #join_form_wrapper .join_column {
+        flex: 50%;
+        max-width: 50%;
+    }
 
-.image_about {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    overflow: hidden;
-}
+    #join_form_wrapper {
+        width: 75%;
+    }
 
-#image_about1 {
-    display: block;
-    grid-area: i1;
-}
-
-#image_about2 {
-    display: block;
-    grid-area: i2;
-}
-
-.article_about img {
-    display: none;
-}
-
-#article_about3 img {
-    display: block;
-}
-
-.article_about .widescreen {
-    display: block;
-}
+    #join_info h2 {
+        font-size: 3rem;
+    }
 }
